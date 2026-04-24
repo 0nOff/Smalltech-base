@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conference Program Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav-bar" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-logo">
+        <span class="nav-logo-badge">CP</span>
+        <span class="nav-logo-text">Conference Program Guide</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#overview" class="nav-link">Обзор</a>
+        <a href="#tracks" class="nav-link">Карта треков</a>
+        <a href="#formats" class="nav-link">Форматы</a>
+        <a href="#layers" class="nav-link">Сквозные слои</a>
+        <a href="#committee" class="nav-link">Комитет</a>
+        <a href="#committee" class="nav-cta">Для программного комитета →</a>
+      </nav>
+      <button class="burger" id="burgerBtn" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#overview" class="mobile-link">Обзор</a>
+      <a href="#tracks" class="mobile-link">Карта треков</a>
+      <a href="#formats" class="mobile-link">Форматы</a>
+      <a href="#layers" class="mobile-link">Сквозные слои</a>
+      <a href="#committee" class="mobile-link">Комитет</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content fade-up">
+        <div class="kicker-badge">
+          <span class="kicker-dot"></span>
+          Интерактивный путеводитель по будущей программе
+        </div>
+        <h1 class="hero-title">Карта конференции, собранная из реальных болей инженерных команд.</h1>
+        <p class="hero-copy">Этот сайт переводит исследование аудитории в архитектуру будущей конференции: что обязательно закрывать в программе, какие треки действительно нужны, где уместны кейсы, а где — панели, AMA и прикладные клиники.</p>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">Ответов в приоритетной когорте</div>
+            <div class="stat-value">346</div>
+            <div class="stat-note">из 468 анкет после очистки</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Уникальных респондентов в тематическом слое</div>
+            <div class="stat-value">316</div>
+            <div class="stat-note">smalltech / midtech</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Аналитических единиц</div>
+            <div class="stat-value">979</div>
+            <div class="stat-note">боли, запросы, незакрытые вопросы</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Обязательных тем ядра</div>
+            <div class="stat-value">6</div>
+            <div class="stat-note">основа будущей программы</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrap fade-up">
+        <div class="image-frame">
+          <img src="images/hero.webp" alt="Абстрактная карта программы конференции" class="hero-img" />
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-gold"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            Must-cover ядро
+          </div>
+          <p class="hero-badge-text">Стоимость изменений, delivery, legacy, platform/devops, архитектура и лидерство образуют основу программы. AI усиливает её, но не подменяет.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="container overview-grid">
+      <div class="fade-up">
+        <div class="section-kicker">Почему именно такая структура</div>
+        <h2 class="section-title">Сайт показывает не просто набор тем, а логику ответа на самые частые и самые острые боли.</h2>
+        <p class="section-copy">Исследование показало: аудитория smalltech/midtech ждёт не очередную витрину технологических трендов, а программу о том, как выживать, поставлять, модернизировать и расти под ограничениями. Поэтому архитектура конференции строится вокруг операционных и организационных проблем, а не вокруг модных ярлыков.</p>
+      </div>
+      <div class="editorial-card fade-up">
+        <div class="overview-layers">
+          <div class="layer-tile active-layer">
+            <div class="layer-num">1-й слой</div>
+            <div class="layer-title">6 обязательных треков</div>
+          </div>
+          <div class="layer-tile">
+            <div class="layer-num">2-й слой</div>
+            <div class="layer-title">AI и сквозные усилители</div>
+          </div>
+        </div>
+        <p class="overview-text">Программа должна объяснять, как снижать стоимость изменений, как строить delivery без enterprise-избыточности, как проходить миграции без разрушения текущего бизнеса, как не терять наблюдаемость и управляемость платформы, и как масштабировать архитектуру и команду одновременно.</p>
+        <p class="overview-text">Отсюда вытекает принцип сайта: пользователь не просто читает рекомендации, а исследует карту решений — от боли к треку, от трека к формату, от формата к поиску спикеров.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRACKS -->
+  <section class="section dark-section" id="tracks">
+    <div class="container">
+      <div class="tracks-header fade-up">
+        <div class="section-kicker light">Карта треков</div>
+        <h2 class="section-title light">Шесть обязательных направлений ядра и один прикладной AI-блок.</h2>
+        <p class="section-copy light">Выбери трек, чтобы увидеть его исследовательское основание, ключевые вопросы, рекомендуемые форматы и портрет спикера.</p>
+      </div>
+      <div class="tracks-layout">
+        <div class="tracks-sidebar" id="tracksSidebar">
+          <button class="track-btn active" data-track="economics">
+            <span class="track-num">01 · MUST-COVER</span>
+            <span class="track-name">Engineering Economics</span>
+            <span class="track-score">54.9</span>
+          </button>
+          <button class="track-btn" data-track="delivery">
+            <span class="track-num">02 · MUST-COVER</span>
+            <span class="track-name">Delivery &amp; Processes</span>
+            <span class="track-score">54.4</span>
+          </button>
+          <button class="track-btn" data-track="legacy">
+            <span class="track-num">03 · MUST-COVER</span>
+            <span class="track-name">Legacy &amp; Migration</span>
+            <span class="track-score">52.6</span>
+          </button>
+          <button class="track-btn" data-track="platform">
+            <span class="track-num">04 · MUST-COVER</span>
+            <span class="track-name">Platform &amp; DevOps</span>
+            <span class="track-score">51.0</span>
+          </button>
+          <button class="track-btn" data-track="architecture">
+            <span class="track-num">05 · MUST-COVER</span>
+            <span class="track-name">Architecture &amp; Scalability</span>
+            <span class="track-score">50.9</span>
+          </button>
+          <button class="track-btn" data-track="leadership">
+            <span class="track-num">06 · MUST-COVER</span>
+            <span class="track-name">Leadership &amp; Org Design</span>
+            <span class="track-score">50.5</span>
+          </button>
+          <button class="track-btn secondary" data-track="ai">
+            <span class="track-num">07 · SECONDARY</span>
+            <span class="track-name">AI in Production</span>
+            <span class="track-score">48.8</span>
+          </button>
+        </div>
+        <div class="track-detail" id="trackDetail">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+      <div class="tracks-image-row">
+        <div class="tracks-img-wrap">
+          <img src="images/trackmap.webp" alt="Схема маршрутов между треками программы" class="tracks-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATS -->
+  <section class="section" id="formats">
+    <div class="container formats-grid">
+      <div class="fade-up">
+        <div class="section-kicker">Форматирование опыта</div>
+        <h2 class="section-title">Программа не должна состоять только из докладов. Разные боли требуют разных сценических форм.</h2>
+        <p class="section-copy">Там, где нужны маршруты и ошибки, работают case study и war story. Там, где нет одного правильного ответа, лучше панель или AMA. Там, где аудитория хочет унести инструмент, нужен workshop или clinic.</p>
+        <div class="formats-img-wrap">
+          <img src="images/panels.webp" alt="Аналитические панели и секционные слои" class="formats-img" />
+        </div>
+      </div>
+      <div class="formats-cards fade-up">
+        <div class="format-card">
+          <div class="format-badge">Формат</div>
+          <div class="format-title">Case study</div>
+          <div class="format-areas">migration, architecture, AI, platform</div>
+          <p class="format-why">Показывает реальный путь команды, последовательность решений и цену ошибки.</p>
+        </div>
+        <div class="format-card">
+          <div class="format-badge">Формат</div>
+          <div class="format-title">War story / failure talk</div>
+          <div class="format-areas">legacy, delivery, leadership</div>
+          <p class="format-why">Позволяет разбирать тупики, откаты, сопротивление и ошибки без полировки reality gap.</p>
+        </div>
+        <div class="format-card">
+          <div class="format-badge">Формат</div>
+          <div class="format-title">Panel discussion</div>
+          <div class="format-areas">leadership, AI, security, alignment</div>
+          <p class="format-why">Подходит темам, где нет одного правильного рецепта и важны сравнительные практики.</p>
+        </div>
+        <div class="format-card">
+          <div class="format-badge">Формат</div>
+          <div class="format-title">Workshop / clinic</div>
+          <div class="format-areas">observability, testing, AI quality, process setup</div>
+          <p class="format-why">Даёт участнику конкретный инструмент, фреймворк или метод разбора ситуации.</p>
+        </div>
+        <div class="format-card">
+          <div class="format-badge">Формат</div>
+          <div class="format-title">AMA / office hours</div>
+          <div class="format-areas">migration, platform, leadership</div>
+          <p class="format-why">Закрывает незакрытые вопросы и помогает дожать сложные нюансы без лишней сцены.</p>
+        </div>
+        <div class="format-card">
+          <div class="format-badge">Формат</div>
+          <div class="format-title">Benchmark / patterns talk</div>
+          <div class="format-areas">efficiency, org design, delivery</div>
+          <p class="format-why">Нужен там, где аудитории важны ориентиры, зрелостные модели и сопоставимые паттерны.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CROSS LAYERS -->
+  <section class="section" id="layers">
+    <div class="container layers-grid">
+      <div class="fade-up">
+        <div class="section-kicker">Сквозные слои</div>
+        <h2 class="section-title">Второй эшелон тем должен усиливать ядро, а не дробить программу на лишние автономные треки.</h2>
+        <div class="layers-cards">
+          <div class="layer-card">
+            <div class="layer-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="layer-card-title">Cross-functional alignment</div>
+            <p class="layer-card-note">Встраивать внутрь leadership, delivery и AI — там, где нужно выравнивать бизнес и технологию.</p>
+          </div>
+          <div class="layer-card">
+            <div class="layer-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="layer-card-title">Security &amp; compliance</div>
+            <p class="layer-card-note">Делать обязательным прикладным слоем внутри platform/devops, migration и AI, а не отдельной абстракцией.</p>
+          </div>
+          <div class="layer-card">
+            <div class="layer-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="layer-card-title">Learning &amp; maturity</div>
+            <p class="layer-card-note">Усиливать leadership, platform и architecture темами роста экспертизы, mentoring и инженерной зрелости.</p>
+          </div>
+          <div class="layer-card">
+            <div class="layer-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <div class="layer-card-title">Data, knowledge &amp; search</div>
+            <p class="layer-card-note">Собирать как специальные блоки внутри AI и architecture, частично — как самостоятельные доклады.</p>
+          </div>
+          <div class="layer-card">
+            <div class="layer-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="layer-card-title">People, hiring &amp; career</div>
+            <p class="layer-card-note">Оставлять как leader-oriented секцию и HR-сателлит, но не превращать в стержень всей программы.</p>
+          </div>
+        </div>
+      </div>
+      <div class="layers-img-wrap fade-up">
+        <img src="images/poster.webp" alt="Постер программы конференции" class="layers-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMITTEE -->
+  <section class="section" id="committee">
+    <div class="container committee-grid">
+      <div class="fade-up">
+        <div class="section-kicker">Решения для комитета</div>
+        <h2 class="section-title">Что делать программному комитету дальше, чтобы из структуры получилась сильная сетка конференции.</h2>
+        <p class="section-copy">Ниже — практические действия: как собирать CFP, кого искать в спикеры, как удерживать баланс между технологическими и организационными болями и почему AI не должен поглотить всё пространство программы.</p>
+        <div class="editorial-card balance-card">
+          <div class="panel-label">Рекомендуемый баланс программы</div>
+          <div class="balance-bars">
+            <div class="balance-row">
+              <div class="balance-label-row">
+                <span>Must-cover ядро</span>
+                <span class="balance-pct">60%</span>
+              </div>
+              <div class="balance-track">
+                <div class="balance-fill" style="width:60%"></div>
+              </div>
+            </div>
+            <div class="balance-row">
+              <div class="balance-label-row">
+                <span>Important secondary темы</span>
+                <span class="balance-pct">30%</span>
+              </div>
+              <div class="balance-track">
+                <div class="balance-fill" style="width:30%"></div>
+              </div>
+            </div>
+            <div class="balance-row">
+              <div class="balance-label-row">
+                <span>Экспериментальные / нишевые форматы</span>
+                <span class="balance-pct">10%</span>
+              </div>
+              <div class="balance-track">
+                <div class="balance-fill" style="width:10%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="committee-right fade-up">
+        <div class="editorial-card actions-card">
+          <div class="panel-label">4 ключевых действия</div>
+          <div class="actions-list">
+            <div class="action-item">
+              <div class="action-num">1</div>
+              <p class="action-text">Собирать CFP не вокруг хайповых технологий, а вокруг инженерных и организационных сценариев боли.</p>
+            </div>
+            <div class="action-item">
+              <div class="action-num">2</div>
+              <p class="action-text">Приоритизировать кейсы компаний, которые росли под ограничениями, а не только зрелые enterprise-истории.</p>
+            </div>
+            <div class="action-item">
+              <div class="action-num">3</div>
+              <p class="action-text">Требовать от спикеров ответа на вопрос «что команда делала, где ошиблась и что теперь работает».</p>
+            </div>
+            <div class="action-item">
+              <div class="action-num">4</div>
+              <p class="action-text">Сбалансировать программу так, чтобы технические треки не существовали отдельно от лидерства, стоимости и delivery-логики.</p>
+            </div>
+          </div>
+        </div>
+        <div class="editorial-card speakers-card">
+          <div class="panel-label">Кого приоритизировать в поиске спикеров</div>
+          <table class="speakers-table">
+            <thead>
+              <tr>
+                <th>Трек</th>
+                <th>Профиль спикера</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Engineering Economics</td><td>CTO, Head of Engineering, Platform Lead</td></tr>
+              <tr><td>Delivery &amp; Processes</td><td>EM, Delivery Manager, Head of Development</td></tr>
+              <tr><td>Legacy &amp; Migration</td><td>Architect, Staff Engineer, Infra Lead</td></tr>
+              <tr><td>Platform &amp; DevOps</td><td>Platform Engineer, SRE, DevOps Lead</td></tr>
+              <tr><td>Architecture &amp; Scalability</td><td>Architect, Principal Engineer</td></tr>
+              <tr><td>Leadership &amp; Org Design</td><td>CTO, VP Eng, Director of Engineering, Head of R&amp;D</td></tr>
+              <tr><td>AI in Production</td><td>AI Lead, Applied ML Lead, Product/Engineering leader</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="nav-logo-badge">CP</span>
+        <span>Conference Program Guide</span>
+      </div>
+      <p class="footer-note">Исследование → темизация → приоритизация → архитектура программы</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
