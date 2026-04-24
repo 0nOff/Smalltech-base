@@ -1,2 +1,12 @@
 .DS_Store
 Program/
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon?
+
+# Editors/IDE
+.vscode/
+.idea/
+*.swp
