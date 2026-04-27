@@ -1015,3 +1015,105 @@ a { text-decoration: none; color: inherit; }
   .overview-layers { grid-template-columns: 1fr; }
   .research-metrics { grid-template-columns: 1fr; }
 }
+
+/* ===== GLOBAL DARK THEME OVERRIDE ===== */
+body {
+  background: var(--bg);
+  color: rgba(255,255,255,0.9);
+}
+
+.section:not(.dark-section) {
+  background: var(--bg);
+}
+
+.editorial-card,
+.format-card,
+.layer-card,
+.action-item,
+.cohort-item,
+.mustcover-item,
+.research-metric-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: none;
+}
+
+.section-kicker,
+.section-title,
+.section-copy,
+.panel-label,
+.overview-text,
+.layer-title,
+.layer-card-title,
+.layer-card-note,
+.format-title,
+.format-areas,
+.format-why,
+.action-text,
+.research-list,
+.research-list li,
+.research-ranking li,
+.research-source-item,
+.cohort-name,
+.cohort-note,
+.mustcover-title,
+.mustcover-meta,
+.mustcover-item p,
+.correlation-table th,
+.correlation-table td,
+.speakers-table th,
+.speakers-table td,
+.balance-label-row,
+.balance-pct {
+  color: rgba(255,255,255,0.78);
+}
+
+.research-metric-card .stat-label,
+.research-metric-card .stat-note,
+.research-source-item span:last-child,
+.research-ranking li span:last-child,
+.cohort-note,
+.mustcover-meta {
+  color: rgba(255,255,255,0.55);
+}
+
+.research-metric-value,
+.cohort-size,
+.mustcover-title,
+.section-title,
+.speakers-table td:first-child {
+  color: rgba(255,255,255,0.95);
+}
+
+.overview-layers .layer-tile {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.12);
+}
+
+.overview-layers .layer-tile.active-layer {
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.24);
+}
+
+.overview-layers .layer-num,
+.overview-layers .layer-title {
+  color: rgba(255,255,255,0.8);
+}
+
+.research-source-list,
+.correlation-table-wrap {
+  border-color: rgba(255,255,255,0.14);
+}
+
+.research-source-item,
+.correlation-table th,
+.correlation-table td,
+.research-ranking li,
+.speakers-table th,
+.speakers-table td {
+  border-bottom-color: rgba(255,255,255,0.1);
+}
+
+.balance-track {
+  background: rgba(255,255,255,0.18);
+}
