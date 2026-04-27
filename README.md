@@ -7,7 +7,7 @@
 ### Шаг 1. Создайте репозиторий на GitHub
 
 1. Зайдите на [github.com](https://github.com) и нажмите **New repository**
-2. Дайте репозиторию имя, например: `conference-program-guide`
+2. Дайте репозиторию имя, например: `smalltech`
 3. Сделайте его **Public**
 4. Нажмите **Create repository**
 
@@ -33,13 +33,13 @@ git push -u origin main
 2. В разделе **Source** выберите ветку `main`, папку `/ (root)`
 3. Нажмите **Save**
 4. Через 1–2 минуты сайт будет доступен по адресу:
-   `https://ВАШ_ЛОГИН.github.io/conference-program-guide/`
+   `https://ВАШ_ЛОГИН.github.io/smalltech/`
 
 ### Шаг 4. Подключите свой домен (опционально)
 
-1. В **Settings → Pages → Custom domain** введите ваш поддомен, например `program.yourdomain.com`
+1. В **Settings → Pages → Custom domain** введите ваш поддомен, например `smalltech.yourdomain.com`
 2. В DNS вашего домена добавьте **CNAME-запись**:
-   - Имя: `program` (или нужный поддомен)
+   - Имя: `smalltech` (или нужный поддомен)
    - Значение: `ВАШ_ЛОГИН.github.io`
 3. Нажмите **Save** и подождите распространения DNS (до 24 часов)
 
