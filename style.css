@@ -331,6 +331,68 @@ a { text-decoration: none; color: inherit; }
 }
 .overview-text:last-child { margin-bottom: 0; }
 
+/* ===== RESEARCH ===== */
+.research-header {
+  max-width: 820px;
+  margin-bottom: 32px;
+}
+.research-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.research-metric-card {
+  border-radius: 20px;
+  padding: 24px;
+}
+.research-metric-value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: var(--fg);
+  margin-top: 10px;
+}
+.research-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+.research-list {
+  margin-top: 14px;
+  padding-left: 20px;
+  color: rgba(13,24,39,0.72);
+}
+.research-list li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.research-ranking {
+  list-style: none;
+  margin-top: 8px;
+}
+.research-ranking li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(13,24,39,0.08);
+  font-size: 14px;
+  color: rgba(13,24,39,0.75);
+}
+.research-ranking li span:last-child {
+  font-family: var(--font-mono);
+  color: rgba(13,24,39,0.55);
+}
+.research-ranking li:last-child { border-bottom: none; }
+.research-conclusion {
+  margin-top: 18px;
+}
+
 /* ===== TRACKS ===== */
 .tracks-header {
   margin-bottom: 48px;
@@ -780,6 +842,8 @@ a { text-decoration: none; color: inherit; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-image-wrap { display: none; }
   .overview-grid { grid-template-columns: 1fr; }
+  .research-metrics { grid-template-columns: 1fr 1fr; }
+  .research-grid { grid-template-columns: 1fr; }
   .tracks-layout { grid-template-columns: 1fr; }
   .tracks-sidebar { flex-direction: row; flex-wrap: wrap; }
   .track-btn { flex: 1; min-width: 140px; }
@@ -803,4 +867,5 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 480px) {
   .stats-grid { grid-template-columns: 1fr; }
   .overview-layers { grid-template-columns: 1fr; }
+  .research-metrics { grid-template-columns: 1fr; }
 }
