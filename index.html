@@ -119,81 +119,195 @@
       <div class="research-header fade-up">
         <div class="section-kicker">Аналитический отчёт</div>
         <h2 class="section-title">Что болит у smalltech и midtech команд: результаты исследования аудитории.</h2>
-        <p class="section-copy">Этот блок объединяет ключевой контент второго сайта в основной гайд: методика, профиль выборки, рейтинг болей и выводы для построения программы.</p>
+        <p class="section-copy">Полная версия отчёта внутри основного гайда: методика, профиль когорты, матрица сигналов между конференциями и практические выводы для программного комитета.</p>
       </div>
 
-      <div class="research-metrics fade-up">
-        <div class="editorial-card research-metric-card">
-          <div class="stat-label">Анкет собрано</div>
-          <div class="research-metric-value">468</div>
-          <div class="stat-note">после очистки и дедупликации</div>
-        </div>
-        <div class="editorial-card research-metric-card">
-          <div class="stat-label">Приоритетная когорта</div>
-          <div class="research-metric-value">346</div>
-          <div class="stat-note">smalltech / midtech (73.9%)</div>
-        </div>
-        <div class="editorial-card research-metric-card">
-          <div class="stat-label">Аналитические единицы</div>
-          <div class="research-metric-value">979</div>
-          <div class="stat-note">боли, вопросы, запросы</div>
-        </div>
-        <div class="editorial-card research-metric-card">
-          <div class="stat-label">Уникальные респонденты</div>
-          <div class="research-metric-value">316</div>
-          <div class="stat-note">в тематизированном слое</div>
-        </div>
-      </div>
-
-      <div class="research-grid">
+      <div class="research-grid research-grid-long">
         <div class="editorial-card fade-up">
-          <div class="panel-label">Механика исследования</div>
-          <p class="overview-text">Данные собраны из опросов 6 конференций, глубинных интервью и открытых ответов о сложных инженерных задачах.</p>
+          <div class="panel-label">01 · Механика исследования</div>
+          <p class="overview-text">Исследование собрано из анкет 6 крупнейших ИТ-конференций, глубинных кастдевов с CTO/Head of Engineering и открытых ответов о сложных рабочих кейсах.</p>
+          <div class="research-metrics">
+            <div class="editorial-card research-metric-card">
+              <div class="stat-label">Анкет собрано</div>
+              <div class="research-metric-value">468</div>
+              <div class="stat-note">после очистки и дедупликации</div>
+            </div>
+            <div class="editorial-card research-metric-card">
+              <div class="stat-label">Приоритетная когорта</div>
+              <div class="research-metric-value">346</div>
+              <div class="stat-note">smalltech / midtech (73.9%)</div>
+            </div>
+            <div class="editorial-card research-metric-card">
+              <div class="stat-label">Аналитические единицы</div>
+              <div class="research-metric-value">979</div>
+              <div class="stat-note">боли, вопросы, запросы</div>
+            </div>
+            <div class="editorial-card research-metric-card">
+              <div class="stat-label">Уникальные респонденты</div>
+              <div class="research-metric-value">316</div>
+              <div class="stat-note">в тематизированном слое</div>
+            </div>
+          </div>
           <ul class="research-list">
             <li><strong>Reach:</strong> 70% доля уникальных респондентов + 30% доля аналитических единиц.</li>
-            <li><strong>Intensity:</strong> тип сигнала, срочность, доля current acute и unmet question.</li>
+            <li><strong>Intensity:</strong> 45% тип сигнала + 35% срочность + 15% current acute + 5% unmet question.</li>
             <li><strong>Pain Priority Score:</strong> 50% Reach + 35% Intensity + 15% широта между конференциями.</li>
+          </ul>
+          <div class="research-source-list">
+            <div class="research-source-item"><span>DevOpsConf</span><span>67 анкет</span></div>
+            <div class="research-source-item"><span>AiConf</span><span>54 анкеты</span></div>
+            <div class="research-source-item"><span>GolangConf</span><span>88 анкет</span></div>
+            <div class="research-source-item"><span>TeamLead Conf</span><span>130 анкет</span></div>
+            <div class="research-source-item"><span>HighLoad++</span><span>129 анкет</span></div>
+            <div class="research-source-item"><span>CustDev</span><span>11 интервью</span></div>
+          </div>
+        </div>
+
+        <div class="editorial-card fade-up">
+          <div class="panel-label">02 · Когортный анализ</div>
+          <p class="overview-text">Smalltech/midtech составляют ядро сигнала. Это команды, которым нужны не трендовые обзоры, а прикладные ответы по стоимости изменений, delivery и управляемости при росте.</p>
+          <div class="cohort-grid">
+            <div class="cohort-item">
+              <div class="cohort-name">Smalltech</div>
+              <div class="cohort-size">~180</div>
+              <div class="cohort-note">ИТ-штат до 300</div>
+            </div>
+            <div class="cohort-item">
+              <div class="cohort-name">Midtech</div>
+              <div class="cohort-size">~166</div>
+              <div class="cohort-note">ИТ-штат 300-1500</div>
+            </div>
+            <div class="cohort-item">
+              <div class="cohort-name">Enterprise</div>
+              <div class="cohort-size">122</div>
+              <div class="cohort-note">ИТ-штат 1500+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="editorial-card fade-up research-priority-extended">
+        <div class="panel-label">03 · Рейтинг болей по приоритету</div>
+        <p class="overview-text">Полный опубликованный рейтинг тем из отчёта: must-cover ядро и secondary-кластеры, которые усиливают программу.</p>
+        <ol class="research-ranking extended">
+          <li><span><strong>01 · MUST-COVER</strong> Engineering Economics</span><span>54.9</span></li>
+          <li><span><strong>02 · MUST-COVER</strong> Delivery &amp; Processes</span><span>54.4</span></li>
+          <li><span><strong>03 · MUST-COVER</strong> Legacy &amp; Migration</span><span>52.6</span></li>
+          <li><span><strong>04 · MUST-COVER</strong> Platform &amp; DevOps</span><span>51.0</span></li>
+          <li><span><strong>05 · MUST-COVER</strong> Architecture &amp; Scalability</span><span>50.9</span></li>
+          <li><span><strong>06 · MUST-COVER</strong> Leadership &amp; Org Design</span><span>50.5</span></li>
+          <li><span><strong>07 · SECONDARY</strong> AI in Production</span><span>48.8</span></li>
+          <li><span><strong>08 · SECONDARY</strong> Cross-functional Alignment</span><span>47.4</span></li>
+          <li><span><strong>09 · SECONDARY</strong> Security &amp; Compliance</span><span>46.2</span></li>
+          <li><span><strong>10 · SECONDARY</strong> Learning &amp; Maturity</span><span>45.9</span></li>
+          <li><span><strong>11 · SECONDARY</strong> Data &amp; Knowledge Systems</span><span>45.9</span></li>
+          <li><span><strong>12 · SECONDARY</strong> People, Hiring &amp; Career</span><span>45.8</span></li>
+        </ol>
+      </div>
+
+      <div class="research-grid research-grid-long">
+        <div class="editorial-card fade-up">
+          <div class="panel-label">04 · Must-cover темы: детальный срез</div>
+          <div class="mustcover-list">
+            <div class="mustcover-item">
+              <div class="mustcover-title">Engineering Economics</div>
+              <div class="mustcover-meta">96 респондентов · reach 24.5% · intensity 79.1%</div>
+              <p>Как снижать стоимость изменений и не раздувать платформу.</p>
+            </div>
+            <div class="mustcover-item">
+              <div class="mustcover-title">Delivery &amp; Processes</div>
+              <div class="mustcover-meta">87 респондентов · reach 22.5% · intensity 80.6%</div>
+              <p>Как строить delivery без enterprise-избыточности.</p>
+            </div>
+            <div class="mustcover-item">
+              <div class="mustcover-title">Legacy &amp; Migration</div>
+              <div class="mustcover-meta">65 респондентов · reach 17.2% · intensity 83%</div>
+              <p>Как мигрировать легаси без разрушения текущего бизнеса.</p>
+            </div>
+            <div class="mustcover-item">
+              <div class="mustcover-title">Platform &amp; DevOps</div>
+              <div class="mustcover-meta">78 респондентов · reach 20.6% · intensity 80.6%</div>
+              <p>Как не терять наблюдаемость и управляемость платформы.</p>
+            </div>
+            <div class="mustcover-item">
+              <div class="mustcover-title">Architecture &amp; Scalability</div>
+              <div class="mustcover-meta">65 респондентов · reach 16.8% · intensity 78.7%</div>
+              <p>Как масштабировать архитектуру и команду одновременно.</p>
+            </div>
+            <div class="mustcover-item">
+              <div class="mustcover-title">Leadership &amp; Org Design</div>
+              <div class="mustcover-meta">60 респондентов · reach 15.8% · intensity 78.8%</div>
+              <p>Как управлять ростом команды без потери управляемости.</p>
+            </div>
+          </div>
+        </div>
+        <div class="editorial-card fade-up research-correlation">
+          <div class="panel-label">05 · Корреляции тем и конференций</div>
+          <p class="overview-text">Матрица отражает распределение сигнала по источникам: универсальные боли повторяются везде, а специализированные — концентрируются в профильных конференциях.</p>
+          <div class="correlation-table-wrap">
+            <table class="correlation-table">
+              <thead>
+                <tr>
+                  <th>Тема</th>
+                  <th>DevOps</th>
+                  <th>AiConf</th>
+                  <th>Golang</th>
+                  <th>TeamLead</th>
+                  <th>HighLoad</th>
+                  <th>CustDev</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Engineering Economics</td><td>strong</td><td>strong</td><td>strong</td><td>strong</td><td>strong</td><td>strong</td></tr>
+                <tr><td>Delivery &amp; Processes</td><td>strong</td><td>medium</td><td>medium</td><td>strong</td><td>strong</td><td>strong</td></tr>
+                <tr><td>Legacy &amp; Migration</td><td>medium</td><td>low</td><td>medium</td><td>medium</td><td>strong</td><td>strong</td></tr>
+                <tr><td>Platform &amp; DevOps</td><td>strong</td><td>low</td><td>strong</td><td>medium</td><td>medium</td><td>medium</td></tr>
+                <tr><td>AI in Production</td><td>medium</td><td>strong</td><td>medium</td><td>low</td><td>medium</td><td>medium</td></tr>
+                <tr><td>Leadership &amp; Org Design</td><td>low</td><td>low</td><td>low</td><td>strong</td><td>strong</td><td>medium</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-grid research-grid-long">
+        <div class="editorial-card fade-up">
+          <div class="panel-label">06 · Выводы и действия комитета</div>
+          <ul class="research-list">
+            <li><strong>Фокус на operational pain:</strong> программа про выживание, управляемость и рост под ограничениями.</li>
+            <li><strong>CFP по сценариям боли:</strong> путь команды, ошибки, рабочие решения и цена решения.</li>
+            <li><strong>Форматы по типу задачи:</strong> case study/war story для маршрутов, panel/AMA для спорных тем, clinic/workshop для инструментов.</li>
+            <li><strong>AI как прикладной слой:</strong> AI усиливает ядро, но не подменяет delivery, economics и leadership.</li>
           </ul>
         </div>
 
-        <div class="editorial-card fade-up">
-          <div class="panel-label">Приоритетные боли (TOP-7)</div>
-          <ol class="research-ranking">
-            <li><span>Engineering Economics</span><span>54.9</span></li>
-            <li><span>Delivery &amp; Processes</span><span>54.4</span></li>
-            <li><span>Legacy &amp; Migration</span><span>52.6</span></li>
-            <li><span>Platform &amp; DevOps</span><span>51.0</span></li>
-            <li><span>Architecture &amp; Scalability</span><span>50.9</span></li>
-            <li><span>Leadership &amp; Org Design</span><span>50.5</span></li>
-            <li><span>AI in Production</span><span>48.8</span></li>
-          </ol>
-        </div>
-      </div>
-
-      <div class="editorial-card fade-up research-conclusion">
-        <div class="panel-label">Ключевой вывод</div>
-        <p class="overview-text">Программа должна быть про выживание, управляемость и развитие инженерной организации под ограничениями, а не про витрину абстрактных технологических новинок.</p>
-        <div class="balance-bars">
-          <div class="balance-row">
-            <div class="balance-label-row">
-              <span>Must-cover ядро</span>
-              <span class="balance-pct">60%</span>
+        <div class="editorial-card fade-up research-conclusion">
+          <div class="panel-label">Рекомендуемый баланс программы</div>
+          <div class="balance-bars">
+            <div class="balance-row">
+              <div class="balance-label-row">
+                <span>Must-cover ядро</span>
+                <span class="balance-pct">60%</span>
+              </div>
+              <div class="balance-track"><div class="balance-fill" style="width:60%"></div></div>
             </div>
-            <div class="balance-track"><div class="balance-fill" style="width:60%"></div></div>
+            <div class="balance-row">
+              <div class="balance-label-row">
+                <span>Important secondary</span>
+                <span class="balance-pct">30%</span>
+              </div>
+              <div class="balance-track"><div class="balance-fill" style="width:30%"></div></div>
+            </div>
+            <div class="balance-row">
+              <div class="balance-label-row">
+                <span>Экспериментальные форматы</span>
+                <span class="balance-pct">10%</span>
+              </div>
+              <div class="balance-track"><div class="balance-fill" style="width:10%"></div></div>
+            </div>
           </div>
-          <div class="balance-row">
-            <div class="balance-label-row">
-              <span>Important secondary</span>
-              <span class="balance-pct">30%</span>
-            </div>
-            <div class="balance-track"><div class="balance-fill" style="width:30%"></div></div>
-          </div>
-          <div class="balance-row">
-            <div class="balance-label-row">
-              <span>Экспериментальные форматы</span>
-              <span class="balance-pct">10%</span>
-            </div>
-            <div class="balance-track"><div class="balance-fill" style="width:10%"></div></div>
+          <div class="research-quote">
+            "Сильная программа — это последовательность решений от боли команды к полезному формату, а не список модных технологических ярлыков."
           </div>
         </div>
       </div>
