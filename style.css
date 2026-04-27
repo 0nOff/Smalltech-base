@@ -346,6 +346,12 @@ a { text-decoration: none; color: inherit; }
   border-radius: 20px;
   padding: 24px;
 }
+.research-metric-card .stat-label {
+  color: rgba(13,24,39,0.48);
+}
+.research-metric-card .stat-note {
+  color: rgba(13,24,39,0.58);
+}
 .research-metric-value {
   font-size: 2.2rem;
   font-weight: 700;
