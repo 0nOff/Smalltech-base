@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -20,8 +20,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      {/* HashRouter — works out of the box on GitHub Pages without extra config */}
-      <HashRouter>
+      {/* BrowserRouter + 404.html fallback in CI/CD handles GitHub Pages routing */}
+      <BrowserRouter>
         <Routes>
           <Route element={<SiteLayout />}>
             <Route path="/" element={<Home />} />
@@ -35,7 +35,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
