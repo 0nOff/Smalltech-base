@@ -39,7 +39,7 @@ const Partnership = () => {
         </div>
       </header>
 
-      <section className="container-wide py-20 sm:py-24">
+      <section id="partnership_meetup" className="container-wide py-20 sm:py-24">
         <SectionHeading
           eyebrow="01 · ближайшее событие"
           title="Smalltech Meetup Vol.3: Аналитика"
@@ -120,7 +120,7 @@ const Partnership = () => {
         </div>
       </section>
 
-      <section className="container-wide py-12 sm:py-20">
+      <section id="partnership_ontico" className="container-wide py-12 sm:py-20">
         <SectionHeading
           eyebrow="02 · эксклюзивное партнёрство"
           title="Смоллтех аллея на Saint HighLoad++ и Saint TeamLead"
