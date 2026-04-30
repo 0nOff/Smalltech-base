@@ -22,6 +22,7 @@ const SiteFooter = () => {
             <li><Link to="/manifesto" className="link-underline">Манифест</Link></li>
             <li><Link to="/research" className="link-underline">Исследование и программа</Link></li>
             <li><Link to="/community" className="link-underline">Сообщество</Link></li>
+            <li><Link to="/materials" className="link-underline">Материалы</Link></li>
             <li><Link to="/partnership" className="link-underline">Партнёрство</Link></li>
             <li><Link to="/join" className="link-underline">Участвовать</Link></li>
           </ul>

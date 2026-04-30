@@ -9,6 +9,7 @@ import Manifesto from "./pages/Manifesto";
 import Research from "./pages/Research";
 import Community from "./pages/Community";
 import Partnership from "./pages/Partnership";
+import Materials from "./pages/Materials";
 import Join from "./pages/Join";
 import NotFound from "./pages/NotFound.tsx";
 
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/research" element={<Research />} />
             <Route path="/community" element={<Community />} />
             <Route path="/partnership" element={<Partnership />} />
+            <Route path="/materials" element={<Materials />} />
             <Route path="/join" element={<Join />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

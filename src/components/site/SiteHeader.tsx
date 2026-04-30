@@ -9,6 +9,7 @@ const NAV = [
   { to: "/manifesto", label: "Манифест" },
   { to: "/research", label: "Исследование и программа" },
   { to: "/community", label: "Сообщество" },
+  { to: "/materials", label: "Материалы" },
   { to: "/partnership", label: "Партнёрство" },
   { to: "/join", label: "Участвовать" },
 ];
