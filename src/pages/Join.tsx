@@ -102,6 +102,7 @@ const Join = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="mt-7 inline-flex h-12 items-center gap-2 rounded-full bg-gradient-amber px-6 text-sm font-medium text-primary-foreground shadow-glow transition-transform hover:scale-[1.02]"
+                onClick={() => window.ym?.(108988295, 'reachGoal', 'click_github_repo_join')}
               >
                 Открыть репозиторий <ArrowRight className="h-4 w-4" />
               </a>
@@ -159,6 +160,7 @@ const Join = () => {
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/40 px-3 py-1 text-xs font-medium text-foreground/90 transition-colors hover:bg-secondary"
+                      onClick={() => window.ym?.(108988295, 'reachGoal', `click_social_${l.label.toLowerCase()}`)}
                     >
                       {l.label}
                     </a>
@@ -184,6 +186,7 @@ const Join = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex h-12 items-center gap-2 rounded-full bg-gradient-amber px-6 text-sm font-medium text-primary-foreground shadow-glow"
+                onClick={() => window.ym?.(108988295, 'reachGoal', 'click_github_cta_join')}
               >
                 <Github className="h-4 w-4" /> GitHub сообщества
               </a>

@@ -78,6 +78,7 @@ const Home = () => {
                 <Link
                   to="/manifesto"
                   className="inline-flex h-12 items-center gap-2 rounded-full bg-gradient-amber px-6 text-sm font-medium text-primary-foreground shadow-glow transition-transform hover:scale-[1.02]"
+                  onClick={() => window.ym?.(108988295, 'reachGoal', 'click_manifesto_hero')}
                 >
                   Прочитать манифест
                   <ArrowRight className="h-4 w-4" />
@@ -85,6 +86,7 @@ const Home = () => {
                 <Link
                   to="/research"
                   className="inline-flex h-12 items-center gap-2 rounded-full border border-border bg-surface/60 px-6 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+                  onClick={() => window.ym?.(108988295, 'reachGoal', 'click_research_hero')}
                 >
                   Исследование и программа
                 </Link>
@@ -203,6 +205,7 @@ const Home = () => {
               <Link
                 to="/join"
                 className="inline-flex h-12 items-center gap-2 rounded-full bg-gradient-amber px-6 text-sm font-medium text-primary-foreground shadow-glow transition-transform hover:scale-[1.02]"
+                onClick={() => window.ym?.(108988295, 'reachGoal', 'click_join_home')}
               >
                 Как присоединиться
                 <ArrowRight className="h-4 w-4" />
@@ -210,6 +213,7 @@ const Home = () => {
               <Link
                 to="/community"
                 className="inline-flex h-12 items-center gap-2 rounded-full border border-border bg-surface/60 px-6 text-sm font-medium transition-colors hover:bg-secondary"
+                onClick={() => window.ym?.(108988295, 'reachGoal', 'click_community_home')}
               >
                 Что мы уже делаем
               </Link>
