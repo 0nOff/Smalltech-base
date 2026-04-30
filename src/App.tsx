@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -15,6 +16,29 @@ import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
 
+// Отправляет в Яндекс Метрику виртуальный хит при каждой смене маршрута.
+// Необходимо для SPA с BrowserRouter — без этого Метрика видит только первую загрузку.
+declare global {
+  interface Window {
+    ym?: (counterId: number, method: string, ...args: unknown[]) => void;
+  }
+}
+
+function MetrikaPageTracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (typeof window.ym === "function") {
+      window.ym(108988295, "hit", window.location.href, {
+        referrer: document.referrer,
+        title: document.title,
+      });
+    }
+  }, [location.pathname]);
+
+  return null;
+}
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -22,6 +46,7 @@ const App = () => (
       <Sonner />
       {/* BrowserRouter + 404.html fallback in CI/CD handles GitHub Pages routing */}
       <BrowserRouter>
+        <MetrikaPageTracker />
         <Routes>
           <Route element={<SiteLayout />}>
             <Route path="/" element={<Home />} />
